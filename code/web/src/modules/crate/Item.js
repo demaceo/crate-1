@@ -28,6 +28,10 @@ class Item extends PureComponent {
     }
   }
 
+// Instead of subscribing when button is clicked, it will redirect the user to a page (/style-preferences) where they can pick from a set of pictures to help determine their personal stylePreference
+
+// After clicking their choices, they are redirected to the /subscritions page and can see their new subscription with the subtitle of their particular category
+
   onClickSubscribe = (crateId) => {
     this.setState({
       isLoading: true

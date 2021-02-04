@@ -22,6 +22,8 @@ const subscriptionsInitialState = {
   list: []
 }
 
+// Add styleType in the subscription by user?? Or is action passed to state and it already has it
+
 // State
 export const subscriptions = (state = subscriptionsInitialState, action) => {
   switch (action.type) {

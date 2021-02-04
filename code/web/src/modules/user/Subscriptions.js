@@ -47,6 +47,8 @@ class Subscriptions extends PureComponent {
           </GridCell>
         </Grid>
 
+// Do we need to add the styleType to each subscription?
+
         {/* Product list */}
         <Grid>
           <GridCell>

@@ -28,3 +28,5 @@ export default {
     auth: true
   }
 }
+
+// Add in a path: '/style-preferences'

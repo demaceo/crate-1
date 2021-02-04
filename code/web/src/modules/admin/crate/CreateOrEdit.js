@@ -27,7 +27,7 @@ import AdminMenu from '../common/Menu'
 // Component
 class CreateOrEdit extends Component {
 
-  constructor(props) {
+  constructor(props) { // props - getting intformation from another component
     super(props)
 
     this.state = {

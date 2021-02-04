@@ -19,6 +19,8 @@ export const PRODUCTS_GET_RELATED_LIST_FAILURE = 'PRODUCTS/GET_RELATED_LIST_FAIL
 
 // Actions
 
+// dispatch updates global state (method to trigger global state updates)
+
 // Get list of products
 export function getList(isLoading = true, forceRefresh = false) {
   return dispatch => {
@@ -115,6 +117,8 @@ export function getById(productId) {
     }))
   }
 }
+
+// Possibly add the styleType to the fields here
 
 // Get list of products related to a product
 export function getRelatedList(productId, isLoading = true) {

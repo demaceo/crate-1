@@ -16,6 +16,8 @@ import { APP_URL } from '../../setup/config/env'
 import { messageShow, messageHide } from '../common/api/actions'
 import { remove, getListByUser } from '../subscription/api/actions'
 
+// this is an item within a subscription
+
 // Component
 class Item extends PureComponent {
 
