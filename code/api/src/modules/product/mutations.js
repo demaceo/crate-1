@@ -95,3 +95,5 @@ export const productRemove = {
   },
   resolve: remove
 }
+
+// add style type (beach, goth, sporty, etc,) attribute 

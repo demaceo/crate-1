@@ -33,3 +33,4 @@ module.exports = {
     return queryInterface.dropTable('users');
   }
 }
+//add a column for style-preferences; maybe as an array of categories

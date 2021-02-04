@@ -20,3 +20,5 @@ const SubscriptionType = new GraphQLObjectType({
 })
 
 export default SubscriptionType
+
+// add style-preferences attribute field

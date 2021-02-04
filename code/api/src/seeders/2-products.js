@@ -92,3 +92,5 @@ module.exports = {
     return queryInterface.bulkDelete('products', null, {});
   }
 }
+
+// Add in styleType attribute

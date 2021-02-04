@@ -26,6 +26,7 @@ export const userSignup = {
   },
   resolve: create
 }
+//FE sends an array of images selected; BE returns what the style-preference is as a string
 
 // Remove
 export const userRemove = {
@@ -38,3 +39,4 @@ export const userRemove = {
   },
   resolve: remove
 }
+//edit/delete style-preference

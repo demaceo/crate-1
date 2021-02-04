@@ -37,3 +37,4 @@ module.exports = {
     return queryInterface.dropTable('subscriptions');
   }
 }
+//add column for categories

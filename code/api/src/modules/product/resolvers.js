@@ -58,6 +58,8 @@ export async function create(parentValue, { name, slug, description, type, gende
   }
 }
 
+//add style type
+
 // Update product
 export async function update(parentValue, { id, name, slug, description, type, gender, image }, { auth }) {
   if(auth.user && auth.user.role === params.user.roles.admin) {
@@ -76,6 +78,8 @@ export async function update(parentValue, { id, name, slug, description, type, g
     throw new Error('Operation denied.')
   }
 }
+
+// add style type
 
 // Delete product
 export async function remove(parentValue, { id }, { auth }) {
@@ -97,3 +101,5 @@ export async function remove(parentValue, { id }, { auth }) {
 export async function getTypes() {
   return Object.values(params.product.types)
 }
+
+// Add styleType??

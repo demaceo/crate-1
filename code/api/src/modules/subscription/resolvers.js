@@ -12,6 +12,8 @@ export async function get(parentValue, { id }) {
   })
 }
 
+// add in the style preference to model
+
 // Get subscription by user
 export async function getByUser(parentValue, {}, { auth }) {
   if(auth.user && auth.user.id > 0) {
@@ -59,3 +61,5 @@ export async function remove(parentValue, { id }, { auth }) {
     throw new Error('Access denied.')
   }
 }
+
+// when style is deleted from userID, the subscription for that style is deleted
