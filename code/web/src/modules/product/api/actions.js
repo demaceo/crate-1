@@ -116,6 +116,8 @@ export function getById(productId) {
   }
 }
 
+//possibly add style to the fields to find by style-preference
+
 // Get list of products related to a product
 export function getRelatedList(productId, isLoading = true) {
   return (dispatch, getState) => {

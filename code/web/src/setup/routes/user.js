@@ -22,6 +22,8 @@ export default {
     auth: true
   },
 
+// add route for /style-preferences
+
   subscriptions: {
     path: '/user/subscriptions',
     component: Subscriptions,

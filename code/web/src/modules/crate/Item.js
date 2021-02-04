@@ -106,3 +106,7 @@ function itemState(state) {
 }
 
 export default connect(itemState, { create, messageShow, messageHide })(withRouter(Item))
+
+// we will need to set onClickSubscribe to route to /style-preferences form
+// the user chooses styles based on images
+// then the /subscriptions will be called something based on their style choices

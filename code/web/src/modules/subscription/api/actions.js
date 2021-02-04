@@ -53,6 +53,7 @@ export function getList(isLoading = true) {
   }
 }
 
+// get subscription by filtering with style-preference
 
 // Get list of subscriptions by user
 export function getListByUser(isLoading = true) {

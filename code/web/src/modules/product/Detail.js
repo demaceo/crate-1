@@ -121,3 +121,5 @@ function detailState(state) {
 }
 
 export default withRouter(connect(detailState, { get })(Detail))
+
+// add style-preferences as a param?
