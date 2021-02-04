@@ -18,3 +18,5 @@ module.exports = function(sequelize, DataTypes) {
 
   return Subscription
 }
+
+// Add in style preference category

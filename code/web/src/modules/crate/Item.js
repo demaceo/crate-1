@@ -106,3 +106,8 @@ function itemState(state) {
 }
 
 export default connect(itemState, { create, messageShow, messageHide })(withRouter(Item))
+
+
+// For the first time when a user clicks on subsrcibe
+// They are taken to the /style-preferences page
+// Will have to add something in the onClickSubscribe function

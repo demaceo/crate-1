@@ -33,3 +33,6 @@ module.exports = {
     return queryInterface.dropTable('users');
   }
 }
+
+
+// Add a column for style preferences for a user, probably an array

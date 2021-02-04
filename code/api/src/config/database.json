@@ -14,5 +14,9 @@
     "host": "127.0.0.1",
     "dialect": "postgres",
     "seederStorage": "sequelize"
-  }
+  },
+
+
+  
+  "test": {"__comment__": "Will probably need to add in a test section"}
 }

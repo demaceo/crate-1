@@ -14,3 +14,7 @@ export const routeApi = APP_URL_API
 
 // Image
 export const routeImage = APP_URL_API
+
+
+// Will need to add the route for /style-preferences 
+// Or add it in the user file and it will be imported 

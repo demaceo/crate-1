@@ -59,3 +59,5 @@ export async function remove(parentValue, { id }, { auth }) {
     throw new Error('Access denied.')
   }
 }
+
+// Add resolver to get all subscriptions by type

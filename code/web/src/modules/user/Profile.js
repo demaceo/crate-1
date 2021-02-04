@@ -60,3 +60,6 @@ function profileState(state) {
 }
 
 export default connect(profileState, { logout })(Profile)
+
+
+// Possibly could add the users style preference to display here 

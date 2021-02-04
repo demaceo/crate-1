@@ -121,3 +121,6 @@ function detailState(state) {
 }
 
 export default withRouter(connect(detailState, { get })(Detail))
+
+
+// Might want to add in style details here 

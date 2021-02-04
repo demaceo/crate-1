@@ -38,3 +38,5 @@ export const userRemove = {
   },
   resolve: remove
 }
+
+// Add mutation to take in array of photos and return a style preference for a user

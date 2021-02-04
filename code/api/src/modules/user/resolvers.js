@@ -77,3 +77,6 @@ export async function remove(parentValue, { id }) {
 export async function getGenders() {
   return Object.values(params.user.gender)
 }
+
+
+// Add a resolver to take in style preference photos and return a style preference String

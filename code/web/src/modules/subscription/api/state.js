@@ -129,3 +129,7 @@ export const subscription = (state = subscriptionInitialState, action) => {
       return state
   }
 }
+
+// Need to import and add in get subsrciptions by style 
+// Or just add the style to the get subscriptions by user response/ get subsription list
+// Can probably just handle this in the action and it will be imported here 

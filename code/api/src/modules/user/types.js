@@ -40,3 +40,6 @@ const UserGenderType = new GraphQLObjectType({
 })
 
 export { UserType, UserLoginType, UserGenderType }
+
+
+// Add user style preference attribute to the user type

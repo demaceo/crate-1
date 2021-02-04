@@ -25,3 +25,5 @@ export const subscription = {
   },
   resolve: get
 }
+
+// Add query for subscription type

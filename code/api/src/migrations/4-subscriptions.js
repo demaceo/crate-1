@@ -37,3 +37,5 @@ module.exports = {
     return queryInterface.dropTable('subscriptions');
   }
 }
+
+// Could add a column for style that would relate a users style preference to a subscription

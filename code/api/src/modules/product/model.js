@@ -23,3 +23,5 @@ module.exports = function(sequelize, DataTypes) {
     }
   })
 }
+
+// Add in style type attribute

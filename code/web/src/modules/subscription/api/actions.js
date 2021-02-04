@@ -141,3 +141,5 @@ export function remove(variables) {
     }))
   }
 }
+
+// Make sure that we can search subsrciptions by the style type 

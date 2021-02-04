@@ -44,3 +44,6 @@ function dashboardState(state) {
 }
 
 export default connect(dashboardState, {})(Dashboard)
+
+// The admin menu is imported here
+

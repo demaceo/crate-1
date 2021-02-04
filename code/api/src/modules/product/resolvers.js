@@ -97,3 +97,6 @@ export async function remove(parentValue, { id }, { auth }) {
 export async function getTypes() {
   return Object.values(params.product.types)
 }
+
+
+// Will have to add the style type to the resolvers

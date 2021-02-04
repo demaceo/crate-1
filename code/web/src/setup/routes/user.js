@@ -28,3 +28,6 @@ export default {
     auth: true
   }
 }
+
+
+// Add the /style-preferences path here? 

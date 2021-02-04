@@ -31,3 +31,6 @@ const ProductTypesType = new GraphQLObjectType({
 })
 
 export { ProductType, ProductTypesType }
+
+
+// Add in the type field for the style type

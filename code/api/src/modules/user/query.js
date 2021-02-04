@@ -47,3 +47,6 @@ export const userGenders = {
   type: new GraphQLList(UserGenderType),
   resolve: getGenders
 }
+
+// Add style preference field to the users query
+// Maybe add a query to return all possible style preferences
