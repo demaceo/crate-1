@@ -17,6 +17,8 @@ const UserType = new GraphQLObjectType({
   })
 })
 
+// Add in the style preference as a field if not added automatically
+
 // User Login type
 const UserLoginType = new GraphQLObjectType({
   name: 'userAuth',

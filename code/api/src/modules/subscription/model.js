@@ -18,3 +18,6 @@ module.exports = function(sequelize, DataTypes) {
 
   return Subscription
 }
+
+
+// Add in a column for the style preference categories

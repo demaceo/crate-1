@@ -43,3 +43,6 @@ export const productTypes = {
   type: new GraphQLList(ProductTypesType),
   resolve: getTypes
 }
+
+
+// Add new const to Get product by the style type (beach, goth) styleType

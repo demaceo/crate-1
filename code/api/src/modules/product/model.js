@@ -23,3 +23,7 @@ module.exports = function(sequelize, DataTypes) {
     }
   })
 }
+
+// product type: clothing, accessory, etc.
+
+// Each piece of clothing needs a "style type" to be used to create the "style preference" - can calculate the number chosen by the user in each category to find the category with the most.

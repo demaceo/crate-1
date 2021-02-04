@@ -37,3 +37,5 @@ module.exports = {
     return queryInterface.dropTable('subscriptions');
   }
 }
+
+// Add a column for certain number of styles (can only have one per perscription)

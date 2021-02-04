@@ -23,3 +23,5 @@ module.exports = function(sequelize, DataTypes) {
 
   return User
 }
+
+// Add style preference(s) based on what pictures they select
