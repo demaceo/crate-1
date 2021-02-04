@@ -19,6 +19,8 @@ const ProductType = new GraphQLObjectType({
   })
 })
 
+//add style type attribute 
+
 // User Gender type
 const ProductTypesType = new GraphQLObjectType({
   name: 'productTypesType',

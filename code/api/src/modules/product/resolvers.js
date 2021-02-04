@@ -77,6 +77,9 @@ export async function update(parentValue, { id, name, slug, description, type, g
   }
 }
 
+
+//add the style type
+
 // Delete product
 export async function remove(parentValue, { id }, { auth }) {
   if(auth.user && auth.user.role === params.user.roles.admin) {

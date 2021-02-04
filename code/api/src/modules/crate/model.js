@@ -16,3 +16,5 @@ module.exports = function(sequelize, DataTypes) {
 
   return Crate
 }
+
+//add in style type attribute 

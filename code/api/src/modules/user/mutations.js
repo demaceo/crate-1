@@ -26,7 +26,9 @@ export const userSignup = {
   },
   resolve: create
 }
-
+//FE send san array of the users selected photos
+//BE uses that array to create a string of the prefernce
+//choose style preference based on the form 
 // Remove
 export const userRemove = {
   type: UserType,
@@ -38,3 +40,4 @@ export const userRemove = {
   },
   resolve: remove
 }
+//edit/delete style-

@@ -23,3 +23,5 @@ module.exports = function(sequelize, DataTypes) {
 
   return User
 }
+
+//add style preference by category

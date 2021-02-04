@@ -95,3 +95,5 @@ export const productRemove = {
   },
   resolve: remove
 }
+
+//add the style preference 

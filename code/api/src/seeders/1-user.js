@@ -30,3 +30,5 @@ module.exports = {
     return queryInterface.bulkDelete('users', null, {});
   }
 }
+
+//add in the attributes 

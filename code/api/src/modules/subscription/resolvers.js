@@ -11,7 +11,7 @@ export async function get(parentValue, { id }) {
     ]
   })
 }
-
+//add in the user preference attribute to the model 
 // Get subscription by user
 export async function getByUser(parentValue, {}, { auth }) {
   if(auth.user && auth.user.id > 0) {
@@ -59,3 +59,5 @@ export async function remove(parentValue, { id }, { auth }) {
     throw new Error('Access denied.')
   }
 }
+
+//add resolver to get all subscriptions by type

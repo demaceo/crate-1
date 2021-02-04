@@ -16,7 +16,7 @@ const UserType = new GraphQLObjectType({
     updatedAt: { type: GraphQLString }
   })
 })
-
+//add style preference field 
 // User Login type
 const UserLoginType = new GraphQLObjectType({
   name: 'userAuth',

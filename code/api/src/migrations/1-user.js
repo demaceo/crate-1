@@ -33,3 +33,6 @@ module.exports = {
     return queryInterface.dropTable('users');
   }
 }
+
+
+//add a column for styling 

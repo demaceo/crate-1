@@ -8,6 +8,7 @@ import params from '../../config/params'
 import models from '../../setup/models'
 
 // Create
+//pass in the style preference as an arguement 
 export async function create(parentValue, { name, email, password }) {
   // Users exists with same email check
   const user = await models.User.findOne({ where: { email } })

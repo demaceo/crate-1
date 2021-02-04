@@ -19,4 +19,6 @@ const SubscriptionType = new GraphQLObjectType({
   })
 })
 
+//add in style preference attibutes
+
 export default SubscriptionType

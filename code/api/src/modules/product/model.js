@@ -23,3 +23,7 @@ module.exports = function(sequelize, DataTypes) {
     }
   })
 }
+
+//product type: clothing, accessory, etc.
+
+//each piece of clothing needs a style type which will be used to create a style preference 
