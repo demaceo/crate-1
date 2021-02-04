@@ -1,97 +1,99 @@
 // Imports
-import { GraphQLString, GraphQLInt } from 'graphql'
+import { GraphQLString, GraphQLInt } from "graphql";
 
 // App Imports
-import { ProductType } from './types'
-import { create, update, remove } from './resolvers'
+import { ProductType } from "./types";
+import { create, update, remove } from "./resolvers";
 
 // Product create
 export const productCreate = {
   type: ProductType,
   args: {
     name: {
-      name: 'name',
-      type: GraphQLString
+      name: "name",
+      type: GraphQLString,
     },
 
     slug: {
-      name: 'slug',
-      type: GraphQLString
+      name: "slug",
+      type: GraphQLString,
     },
 
     description: {
-      name: 'description',
-      type: GraphQLString
+      name: "description",
+      type: GraphQLString,
     },
 
     type: {
-      name: 'type',
-      type: GraphQLInt
+      name: "type",
+      type: GraphQLInt,
     },
 
     gender: {
-      name: 'gender',
-      type: GraphQLInt
+      name: "gender",
+      type: GraphQLInt,
     },
 
     image: {
-      name: 'image',
-      type: GraphQLString
-    }
+      name: "image",
+      type: GraphQLString,
+    },
   },
-  resolve: create
-}
+  resolve: create,
+};
 
 // Product update
 export const productUpdate = {
   type: ProductType,
   args: {
     id: {
-      name: 'id',
-      type: GraphQLInt
+      name: "id",
+      type: GraphQLInt,
     },
 
     name: {
-      name: 'name',
-      type: GraphQLString
+      name: "name",
+      type: GraphQLString,
     },
 
     slug: {
-      name: 'slug',
-      type: GraphQLString
+      name: "slug",
+      type: GraphQLString,
     },
 
     description: {
-      name: 'description',
-      type: GraphQLString
+      name: "description",
+      type: GraphQLString,
     },
 
     type: {
-      name: 'type',
-      type: GraphQLInt
+      name: "type",
+      type: GraphQLInt,
     },
 
     gender: {
-      name: 'gender',
-      type: GraphQLInt
+      name: "gender",
+      type: GraphQLInt,
     },
 
     image: {
-      name: 'image',
-      type: GraphQLString
-    }
+      name: "image",
+      type: GraphQLString,
+    },
   },
-  resolve: update
-}
+  resolve: update,
+};
 
 // Product remove
 export const productRemove = {
   type: ProductType,
   args: {
     id: {
-      name: 'id',
-      type: GraphQLInt
-    }
+      name: "id",
+      type: GraphQLInt,
+    },
   },
-  resolve: remove
-}
+  resolve: remove,
+};
+
+// add style type
