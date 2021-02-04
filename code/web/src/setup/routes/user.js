@@ -22,6 +22,9 @@ export default {
     auth: true
   },
 
+
+// '/style-pref'
+
   subscriptions: {
     path: '/user/subscriptions',
     component: Subscriptions,

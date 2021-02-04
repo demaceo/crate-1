@@ -24,6 +24,7 @@ import {
 import { messageShow, messageHide } from '../../common/api/actions'
 import AdminMenu from '../common/Menu'
 
+//this is where a crate can be updated based on the users information given 
 // Component
 class CreateOrEdit extends Component {
 

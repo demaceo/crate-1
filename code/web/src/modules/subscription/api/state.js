@@ -22,6 +22,8 @@ const subscriptionsInitialState = {
   list: []
 }
 
+//add style added to subscription by user 
+
 // State
 export const subscriptions = (state = subscriptionsInitialState, action) => {
   switch (action.type) {

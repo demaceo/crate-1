@@ -53,7 +53,7 @@ export function getList(isLoading = true) {
   }
 }
 
-
+//make sure to each style we can filter by 
 // Get list of subscriptions by user
 export function getListByUser(isLoading = true) {
   return dispatch => {

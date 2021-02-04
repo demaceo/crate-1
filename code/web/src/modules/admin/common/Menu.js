@@ -27,4 +27,6 @@ const AdminMenu = () => (
   </Grid>
 )
 
+//this is the admin view 
+
 export default AdminMenu

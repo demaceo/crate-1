@@ -107,6 +107,8 @@ class Detail extends PureComponent {
   }
 }
 
+//add style type for each item 
+
 // Component Properties
 Detail.propTypes = {
   product: PropTypes.object.isRequired,

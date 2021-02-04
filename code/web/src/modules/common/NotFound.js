@@ -44,5 +44,5 @@ const NotFound = () => (
     </Grid>
   </div>
 )
-
+//line 36 needs a better error message with less grammatical errors
 export default NotFound

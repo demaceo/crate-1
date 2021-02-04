@@ -17,6 +17,7 @@ import AdminMenu from '../common/Menu'
 // Component
 class List extends PureComponent {
 
+  //puts the subscriptions in descending order
   // Runs on server only for SSR
   static fetchData({ store }) {
     return store.dispatch(getSubscriptionsList('DESC'))

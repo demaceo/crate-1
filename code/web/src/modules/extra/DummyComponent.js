@@ -20,5 +20,5 @@ class DummyComponent extends PureComponent {
     )
   }
 }
-
+//these are just templates for components
 export default DummyComponent

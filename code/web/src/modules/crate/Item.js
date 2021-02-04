@@ -105,4 +105,9 @@ function itemState(state) {
   }
 }
 
+//on onclick subscribe  we will want to have the page redirected to the form page 
+//then to the subscription page 
+//this where as a user we can select multiple styles 
+//aslo change the title of the crate to reflect the style that was selected by the user 
+
 export default connect(itemState, { create, messageShow, messageHide })(withRouter(Item))

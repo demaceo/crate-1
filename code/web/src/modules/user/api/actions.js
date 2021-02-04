@@ -66,6 +66,7 @@ export function login(userCredentials, isLoading = true) {
   }
 }
 
+
 // Set user token and info in localStorage and cookie
 export function loginSetUserLocalStorageAndCookie(token, user) {
   // Update token

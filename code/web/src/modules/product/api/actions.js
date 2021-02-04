@@ -57,7 +57,7 @@ export function getList(isLoading = true, forceRefresh = false) {
       })
   }
 }
-
+//Dispatch is redux and updates a global state instead of components state 
 // Get single product
 export function get(slug, isLoading = true) {
   return dispatch => {
@@ -115,6 +115,8 @@ export function getById(productId) {
     }))
   }
 }
+
+//possibly add a 'style type' to fields for filtering by the clothing style 
 
 // Get list of products related to a product
 export function getRelatedList(productId, isLoading = true) {

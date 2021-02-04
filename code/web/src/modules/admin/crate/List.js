@@ -180,4 +180,6 @@ function listState(state) {
   }
 }
 
+//this is where the admin has the option to remove crates or cancel subscriptions
+
 export default connect(listState, { getCrateList, removeCrate, messageShow, messageHide })(List)
