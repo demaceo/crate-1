@@ -28,3 +28,5 @@ const AdminMenu = () => (
 )
 
 export default AdminMenu
+
+// This is essentially an admin dashboard
