@@ -12,7 +12,9 @@
     "start": "nodemon src/index.js --exec babel-node",
     "start:prod": "npm run build:prod && npm run start:server",
     "build:prod": "babel src -s -D -d build",
-    "start:server": "node build/index.js"
+    "start:server": "node build/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +25,7 @@
     "@babel/node": "7.10.5",
     "@babel/plugin-transform-runtime": "7.11.5",
     "@babel/preset-env": "7.11.5",
+    "jest": "^26.6.3",
     "nodemon": "2.0.4"
   },
   "dependencies": {
