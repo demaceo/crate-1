@@ -13,3 +13,5 @@ export default function (server) {
     }
   })
 }
+
+// Let's you know whether the server was able to connect or not

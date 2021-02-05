@@ -2,6 +2,8 @@
 import models from '../../setup/models'
 import params from '../../config/params'
 
+// Similar to a controller in Ruby, here is where the CRUD action calls are made
+
 // Get crate by ID
 export async function getById(parentValue, { crateId }) {
   const crate = await models.Crate.findOne({ where: { id: crateId } })

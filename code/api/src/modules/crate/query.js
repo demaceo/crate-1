@@ -5,6 +5,8 @@ import { GraphQLInt, GraphQLString, GraphQLList } from 'graphql'
 import CrateType from './types'
 import { getAll, getById } from './resolvers'
 
+// Similar to the GET requests in REST
+
 // Crates All
 export const crates = {
   type: new GraphQLList(CrateType),

@@ -1,6 +1,8 @@
 // Imports
 import { GraphQLObjectType, GraphQLString, GraphQLInt } from 'graphql'
 
+// Create the information available in the GraphQL endpoint
+
 // Crate type
 const CrateType = new GraphQLObjectType({
   name: 'crate',

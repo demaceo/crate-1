@@ -5,6 +5,8 @@ import { GraphQLString, GraphQLInt } from 'graphql'
 import CrateType from './types'
 import { create, remove, update } from './resolvers'
 
+// Similar to the POST/PATCH requests in REST
+
 // Crate create
 export const crateCreate = {
   type: CrateType,

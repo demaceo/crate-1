@@ -21,3 +21,5 @@ setupGraphQL(server)
 
 // Start server
 setupStartServer(server)
+
+// This file boots up the server
