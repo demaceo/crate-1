@@ -1,13 +1,13 @@
 // Imports
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
 // UI Imports
-import { grey2, grey4, black } from '../common/colors'
+import { grey2, grey4, black } from "../common/colors";
 
 // Component
 const Input = (props) => {
-  const { children, fullWidth, ...other } = props
+  const { children, fullWidth, ...other } = props;
 
   return (
     <div>
@@ -22,31 +22,31 @@ const Input = (props) => {
           font-size: 1em;
           border: none;
           background-color: transparent;
-          color: ${ black };
-          border-bottom: 1px solid ${ grey2 };
-          width: ${ fullWidth ? '100%' : 'auto' };
+          color: ${black};
+          border-bottom: 1px solid ${grey2};
+          width: ${fullWidth ? "100%" : "auto"};
           -webkit-appearance: none;
           border-radius: 0;
         }
         select:hover {
-          border-bottom: 1px solid ${ grey4 };
+          border-bottom: 1px solid ${grey4};
         }
         select:active {
-          border-bottom: 1px solid ${ grey4 };
+          border-bottom: 1px solid ${grey4};
         }
       `}</style>
     </div>
-  )
-}
+  );
+};
 
 // Component Properties
 Input.propTypes = {
   type: PropTypes.string,
-  fullWidth: PropTypes.bool
-}
+  fullWidth: PropTypes.bool,
+};
 Input.defaultProps = {
-  type: 'button',
-  fullWidth: false
-}
+  type: "button",
+  fullWidth: false,
+};
 
-export default Input
+export default Input;

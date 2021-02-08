@@ -1,21 +1,21 @@
 // Imports
-import { Server } from 'http'
-import Express from 'express'
+import { Server } from "http";
+import Express from "express";
 
 // App Imports
-import loadModules from './setup/server/load-modules'
-import loadRoutes from './setup/server/load-routes'
-import startServer from './setup/server/start-server'
+import loadModules from "./setup/server/load-modules";
+import loadRoutes from "./setup/server/load-routes";
+import startServer from "./setup/server/start-server";
 
 // Create new server
-const app = new Express()
-const server = new Server(app)
+const app = new Express();
+const server = new Server(app);
 
 // Load modules
-loadModules(app)
+loadModules(app);
 
 // Load routes
-loadRoutes(app)
+loadRoutes(app);
 
 // Start Server
-startServer(server)
+startServer(server);
