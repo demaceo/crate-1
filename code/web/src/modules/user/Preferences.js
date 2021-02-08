@@ -3,7 +3,8 @@ import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Helmet } from "react-helmet";
-import ImageTile from '../../ui/image/Tile'
+import ImageTile from "../../ui/image/Tile";
+import { APP_URL } from "../../setup/config/env";
 
 // UI Imports
 import { Grid, GridCell } from "../../ui/grid";
@@ -23,18 +24,195 @@ class Preferences extends PureComponent {
         <Helmet>
           <title> Choose Your Style Survey - Crate</title>
         </Helmet>
-        <Grid gutter={true} alignCenter={true}
-          style={{display:'flex',
+        <Grid
+          gutter={true}
+          alignCenter={true}
+          style={{
+            display: "flex",
             flex: 1,
-            flexDirection:'column',
-            marginTop:'15vh'}}
-            >
-          <p style={{padding: "2%"}}>Please Choose a Shirt</p>
-          <p style={{padding: "2%"}}>Which Bottoms would you wear on a night out?</p>
-          <p style={{padding: "2%"}}>Which shoes would you wear on a dialy basis</p>
-          <p style={{padding: "2%"}}>Which hat would you wear under the hot sun?</p>
+            flexDirection: "column",
+            marginTop: "15vh",
+          }}>
           <GridCell justifyCenter={true}>
-            <ImageTile width={300} height={530} />
+            <p style={{ padding: "2%" }}>Please Choose a Shirt</p>
+            <form
+              style={{
+                display: "flex",
+                flex: 1,
+                flexDirection: "row",
+                marginTop: "15vh",
+              }}>
+              <div
+                style={{
+                  display: "flex",
+                  flex: 1,
+                  flexDirection: "column",
+                  alignItems: "center",
+                  marginTop: "5vh",
+                }}>
+                <ImageTile
+                  width={300}
+                  height={300}
+                  image={` ${APP_URL}/images/survey-pics/mens-survey/goth-top.jpg`}
+                  margin={10}
+                />
+                <input name='tops' id='goth-top' type='radio'></input>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flex: 1,
+                  flexDirection: "column",
+                  alignItems: "center",
+                  marginTop: "5vh",
+                }}>
+                <ImageTile
+                  width={300}
+                  height={300}
+                  image={` ${APP_URL}/images/survey-pics/mens-survey/sport-top.jpg`}
+                  margin={10}
+                />
+                <input name='tops' id='goth-top' type='radio'></input>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flex: 1,
+                  flexDirection: "column",
+                  alignItems: "center",
+                  marginTop: "5vh",
+                }}>
+                <ImageTile
+                  width={300}
+                  height={300}
+                  image={` ${APP_URL}/images/survey-pics/mens-survey/beach-top.jpg`}
+                  margin={10}
+                />
+                <input name='tops' id='beach-top' type='radio'></input>
+              </div>
+            </form>
+
+            <p style={{ padding: "2%" }}>
+              Which Bottoms would you wear on a night out?
+            </p>
+            <form
+              style={{
+                display: "flex",
+                flex: 1,
+                flexDirection: "row",
+                marginTop: "15vh",
+              }}>
+              <div
+                style={{
+                  display: "flex",
+                  flex: 1,
+                  flexDirection: "column",
+                  alignItems: "center",
+                  marginTop: "5vh",
+                }}>
+                <ImageTile
+                  width={300}
+                  height={300}
+                  image={` ${APP_URL}/images/survey-pics/mens-survey/goth-bottoms.jpg`}
+                  margin={10}
+                />
+                <input name='bottoms' id='goth-bottom' type='radio'></input>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flex: 1,
+                  flexDirection: "column",
+                  alignItems: "center",
+                  marginTop: "5vh",
+                }}>
+                <ImageTile
+                  width={300}
+                  height={300}
+                  image={` ${APP_URL}/images/survey-pics/mens-survey/sport-bottoms.jpg`}
+                  margin={10}
+                />
+                <input name='bottoms' id='sport-bottom' type='radio'></input>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flex: 1,
+                  flexDirection: "column",
+                  alignItems: "center",
+                  marginTop: "5vh",
+                }}>
+                <ImageTile
+                  width={300}
+                  height={300}
+                  image={` ${APP_URL}/images/survey-pics/mens-survey/beach-bottoms.jpg`}
+                  margin={10}
+                />
+                <input name='bottoms' id='beach-bottom' type='radio'></input>
+              </div>
+            </form>
+            <p style={{ padding: "2%" }}>
+              Which shoes would you wear on a daily basis
+            </p>
+            <form
+              style={{
+                display: "flex",
+                flex: 1,
+                flexDirection: "row",
+                marginTop: "15vh",
+              }}>
+              <div
+                style={{
+                  display: "flex",
+                  flex: 1,
+                  flexDirection: "column",
+                  alignItems: "center",
+                  marginTop: "5vh",
+                }}>
+                <ImageTile
+                  width={300}
+                  height={300}
+                  image={` ${APP_URL}/images/survey-pics/mens-survey/goth-shoes.jpg`}
+                  margin={10}
+                />
+                <input name='shoes' id='goth-shoes' type='radio'></input>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flex: 1,
+                  flexDirection: "column",
+                  alignItems: "center",
+                  marginTop: "5vh",
+                }}>
+                <ImageTile
+                  width={300}
+                  height={300}
+                  image={` ${APP_URL}/images/survey-pics/mens-survey/sport-shoes.jpg`}
+                  margin={10}
+                />
+                <input name='shoes' id='sport-shoes' type='radio'></input>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flex: 1,
+                  flexDirection: "column",
+                  alignItems: "center",
+                  marginTop: "5vh",
+                }}>
+                <ImageTile
+                  width={300}
+                  height={300}
+                  image={` ${APP_URL}/images/survey-pics/mens-survey/beach-shoes.jpg`}
+                  margin={10}
+                />
+                <input name='shoes' id='beach-shoes' type='radio'></input>
+              </div>
+            </form>
+            <p style={{ padding: "2%" }}>
+              Which hat would you wear under the hot sun?
+            </p>
           </GridCell>
           <GridCell>
             <Grid>
@@ -50,7 +228,7 @@ class Preferences extends PureComponent {
           </GridCell>
         </Grid>
       </GridCell>
-    )
+    );
   }
 }
 
