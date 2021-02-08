@@ -23,6 +23,10 @@ class Preferences extends PureComponent {
           <title> Choose Your Style Survey - Crate</title>
         </Helmet>
         <Grid gutter={true} alignCenter={true}>
+          <p>Please Choose a Shirt</p>
+          <p>Which Bottoms would you wear on a night out?</p>
+          <p>Which shoes would you wear on a dialy basis</p>
+          <p>Which hat would you wear under the hot sun?</p>
           <GridCell justifyCenter={true}>
             <ImageTile width={300} height={530} shadow={level1} />
           </GridCell>
