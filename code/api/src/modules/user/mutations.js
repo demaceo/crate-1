@@ -3,8 +3,7 @@ import { GraphQLString, GraphQLInt, GraphQLBoolean } from 'graphql'
 
 // App Imports
 import { UserType } from './types'
-import { create, remove, createStyle } from './resolvers'
-// import { TEXT } from 'sequelize/types'
+import { create, remove } from './resolvers'
 
 // Create
 export const userSignup = {
@@ -49,8 +48,8 @@ export const createStylePreference = {
       type: GraphQLInt
     },
 
-    stylePreference: {
-      name: 'styleArray',
+    style: {
+      name: 'style',
       type: GraphQLString
     },
 
