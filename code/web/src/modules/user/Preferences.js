@@ -8,8 +8,6 @@ import { APP_URL } from "../../setup/config/env";
 
 // UI Imports
 import { Grid, GridCell } from "../../ui/grid";
-import { H3 } from "../../ui/typography";
-import { grey, grey2 } from "../../ui/common/colors";
 
 // Component
 class Preferences extends PureComponent {
@@ -19,8 +17,19 @@ class Preferences extends PureComponent {
   }
 
   handleClick = (e) => {
-  e.preventDefault
-    console.log(e)
+  e.preventDefault()
+
+  let selectedStyles = [];
+
+
+
+  let allRadioBtns = document.getElementsByClassName('radio-btn');
+    for (let i = 0, length = allRadioBtns.length; i < length; i++) {
+      if (allRadioBtns[i].checked) {
+        selectedStyles.push(allRadioBtns[i].value)
+      }
+    }
+    console.log(selectedStyles)
   }
 
   render() {
@@ -257,7 +266,7 @@ class Preferences extends PureComponent {
                   image={` ${APP_URL}/images/survey-pics/womens-survey/goth-top.jpg`}
                   margin={10}
                 />
-                <input name='tops' id='goth-top' type='radio'></input>
+                <input name='tops' className='radio-btn' type='radio' value='goth'></input>
               </div>
               <div
                 style={{
@@ -273,7 +282,7 @@ class Preferences extends PureComponent {
                   image={` ${APP_URL}/images/survey-pics/womens-survey/sport-top.jpg`}
                   margin={10}
                 />
-                <input name='tops' id='goth-top' type='radio'></input>
+                <input name='tops' className='radio-btn' type='radio' value='sport'></input>
               </div>
               <div
                 style={{
@@ -289,7 +298,7 @@ class Preferences extends PureComponent {
                   image={` ${APP_URL}/images/survey-pics/womens-survey/beach-top.jpg`}
                   margin={10}
                 />
-                <input name='tops' id='beach-top' type='radio'></input>
+                <input name='tops' className='radio-btn' type='radio' value='beach'></input>
               </div>
             </form>
 
@@ -317,7 +326,7 @@ class Preferences extends PureComponent {
                   image={` ${APP_URL}/images/survey-pics/womens-survey/goth-bottoms.jpg`}
                   margin={10}
                 />
-                <input name='bottoms' id='goth-bottom' type='radio'></input>
+                <input name='bottoms' className='radio-btn' type='radio' value='goth'></input>
               </div>
               <div
                 style={{
@@ -332,7 +341,7 @@ class Preferences extends PureComponent {
                   image={` ${APP_URL}/images/survey-pics/womens-survey/sport-bottoms.jpg`}
                   margin={10}
                 />
-                <input name='bottoms' id='sport-bottom' type='radio'></input>
+                <input name='bottoms' className='radio-btn' type='radio' vlaue='sport'></input>
               </div>
               <div
                 style={{
@@ -347,7 +356,7 @@ class Preferences extends PureComponent {
                   image={` ${APP_URL}/images/survey-pics/womens-survey/beach-bottoms.jpg`}
                   margin={10}
                 />
-                <input name='bottoms' id='beach-bottom' type='radio'></input>
+                <input name='bottoms' className='radio-btn' type='radio' value='beach'></input>
               </div>
             </form>
             <p style={{ padding: "2%", textAlignLast: "center" }}>
@@ -372,7 +381,7 @@ class Preferences extends PureComponent {
                   image={` ${APP_URL}/images/survey-pics/womens-survey/goth-shoes.jpg`}
                   margin={10}
                 />
-                <input name='shoes' id='goth-shoes' type='radio'></input>
+                <input name='shoes' className='radio-btn' type='radio' value='goth'></input>
               </div>
               <div
                 style={{
@@ -387,7 +396,7 @@ class Preferences extends PureComponent {
                   image={` ${APP_URL}/images/survey-pics/womens-survey/sport-shoes.jpg`}
                   margin={10}
                 />
-                <input name='shoes' id='sport-shoes' type='radio'></input>
+                <input name='shoes' className='radio-btn' type='radio' value='sport'></input>
               </div>
               <div
                 style={{
@@ -402,7 +411,7 @@ class Preferences extends PureComponent {
                   image={` ${APP_URL}/images/survey-pics/womens-survey/beach-shoes.jpg`}
                   margin={10}
                 />
-                <input name='shoes' id='beach-shoes' type='radio'></input>
+                <input name='shoes' className='radio-btn' type='radio' value='beach'></input>
               </div>
             </form>
             <p style={{ padding: "2%", textAlignLast: "center"}}>
@@ -427,7 +436,7 @@ class Preferences extends PureComponent {
                   image={` ${APP_URL}/images/survey-pics/womens-survey/goth-necklace.jpg`}
                   margin={10}
                 />
-                <input name='shoes' id='goth-shoes' type='radio'></input>
+                <input name='shoes' className='radio-btn' type='radio' value='goth'></input>
               </div>
               <div
                 style={{
@@ -442,7 +451,7 @@ class Preferences extends PureComponent {
                   image={` ${APP_URL}/images/survey-pics/womens-survey/sport-necklace.jpg`}
                   margin={10}
                 />
-                <input name='shoes' id='sport-shoes' type='radio'></input>
+                <input name='shoes' className='radio-btn' type='radio' value='sport'></input>
               </div>
               <div
                 style={{
@@ -457,14 +466,14 @@ class Preferences extends PureComponent {
                   image={` ${APP_URL}/images/survey-pics/womens-survey/beach-necklace.jpg`}
                   margin={10}
                 />
-                <input name='shoes' id='beach-shoes' type='radio'></input>
+                <input name='shoes' className='radio-btn' type='radio' value='beach'></input>
               </div>
             </form>
           </GridCell>
         </Grid>
           <button 
             style={{height:'55px', width:'100px', margin:'10px'}}
-            onClick={() => handleClick(e)}
+            onClick={() => this.handleClick(event)}
             >Submit</button>
       </GridCell>
     );
