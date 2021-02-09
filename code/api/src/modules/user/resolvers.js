@@ -84,5 +84,11 @@ export async function getGenders() {
   return Object.values(params.user.gender);
 }
 
-// resolvers are what handle the logic
-// The JWT is handed to the user only once the user has been verified...matching passwords etc.
+// Create Style Preference 
+export async function createStyle(parentValue, { id, styleArray }) {
+  const user = await models.User.findOne({ where: { id } })
+
+  return await user.update({
+    styleArray: user.stylePreference
+  })
+}
