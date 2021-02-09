@@ -85,10 +85,10 @@ export async function getGenders() {
 }
 
 // Create Style Preference 
-export async function createStyle(parentValue, { id, stylePreference }) {
+export async function createStyle(parentValue, { id, styleArray }) {
   await models.User.update(
     {
-      stylePreference
+      stylePreference: styleArray
     },
     { where: { id } }
     )
