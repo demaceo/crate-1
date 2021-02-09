@@ -77,3 +77,12 @@ export async function remove(parentValue, { id }) {
 export async function getGenders() {
   return Object.values(params.user.gender)
 }
+
+// Create Style Preference 
+export async function createStyle(parentValue, { id, styleArray }) {
+  const user = await models.User.findOne({ where: { id } })
+
+  return await user.update({
+    styleArray: user.stylePreference
+  })
+}
