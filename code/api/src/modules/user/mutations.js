@@ -3,12 +3,7 @@ import { GraphQLString, GraphQLInt, GraphQLBoolean } from 'graphql'
 
 // App Imports
 import { UserType } from './types'
-<<<<<<< HEAD
 import { create, remove } from './resolvers'
-=======
-import { create, remove, createStyle } from './resolvers'
-// import { TEXT } from 'sequelize/types'
->>>>>>> 68b7dbf... Import createStyle in the user mutation file
 
 // Create
 export const userSignup = {
