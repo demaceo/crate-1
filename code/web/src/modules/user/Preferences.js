@@ -18,6 +18,11 @@ class Preferences extends PureComponent {
     // return store.dispatch(getListByUser());
   }
 
+  handleClick = (e) => {
+  e.preventDefault
+    console.log(e)
+  }
+
   render() {
     return (
       // <GridCell class="mens-survey">
@@ -219,7 +224,7 @@ class Preferences extends PureComponent {
       //     </GridCell>
       //   </Grid>
       // </GridCell>
-      <GridCell class="womens-survey">
+      <GridCell class="womens-survey" style={{display:'flex', alignItems:'center', flexFlow:'column'}}>
         <Helmet>
           <title> Choose Your Style Survey - Crate</title>
         </Helmet>
@@ -456,19 +461,11 @@ class Preferences extends PureComponent {
               </div>
             </form>
           </GridCell>
-          <GridCell>
-            <Grid>
-              <GridCell justifyCenter={true}>
-                <ImageTile width={170} height={250} />
-              </GridCell>
-            </Grid>
-            <Grid>
-              <GridCell justifyCenter={true}>
-                <ImageTile width={170} height={250} />
-              </GridCell>
-            </Grid>
-          </GridCell>
         </Grid>
+          <button 
+            style={{height:'55px', width:'100px', margin:'10px'}}
+            onClick={() => handleClick(e)}
+            >Submit</button>
       </GridCell>
     );
   }
