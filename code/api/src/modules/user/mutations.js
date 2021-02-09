@@ -2,8 +2,9 @@
 import { GraphQLString, GraphQLInt } from "graphql";
 
 // App Imports
-import { UserType } from "./types";
-import { create, remove } from "./resolvers";
+import { UserType } from './types'
+import { create, remove } from './resolvers'
+import { TEXT } from 'sequelize/types'
 
 // Create
 export const userSignup = {
@@ -36,8 +37,22 @@ export const userRemove = {
       type: GraphQLInt,
     },
   },
-  resolve: remove,
-};
+  resolve: remove
+}
 
-// User should have a style preferences array, hand the array of selected
-// photos to the backend, where an algorithm is run that based on that array will return a style preferences string
+// Create Style Preference
+export const createStylePreference = {
+  type: UserType,
+  args: {
+    id: {
+      name: 'id',
+      type: GraphQLInt
+    },
+
+    styleArray: {
+      name: 'styleArray',
+      type: TEXT
+    }
+  },
+  resolve: createStyle
+}
