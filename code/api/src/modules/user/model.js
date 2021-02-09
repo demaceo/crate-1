@@ -18,6 +18,9 @@ module.exports = function (sequelize, DataTypes) {
     survey: {
       type: DataTypes.BOOLEAN
     },
+    survey: {
+      type: DataTypes.BOOLEAN
+    },
     stylePreference: {
       type: DataTypes.TEXT
     }
