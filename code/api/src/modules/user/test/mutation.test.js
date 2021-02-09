@@ -26,7 +26,8 @@ describe('Test user mutations', () => {
             data: {
               createStylePreference: {
                 id: 2,
-                stylePreference: "athletic"
+                stylePreference: "athletic",
+                survey: true
                 }
               }
             }
