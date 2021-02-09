@@ -49,8 +49,8 @@ export const createStylePreference = {
       type: GraphQLInt
     },
 
-    styleArray: {
-      name: 'styleArray',
+    stylePreference: {
+      name: 'stylePreference',
       type: GraphQLString
     }
   },
