@@ -1,5 +1,5 @@
 // Imports
-import { GraphQLString, GraphQLInt } from 'graphql'
+import { GraphQLString, GraphQLInt, GraphQLBoolean } from 'graphql'
 
 // App Imports
 import { UserType } from './types'
@@ -52,6 +52,11 @@ export const createStylePreference = {
     stylePreference: {
       name: 'styleArray',
       type: GraphQLString
+    },
+
+    survey: {
+      name: 'survey',
+      type: GraphQLBoolean
     }
   },
   resolve: createStyle
