@@ -33,7 +33,7 @@ class Preferences extends PureComponent {
       //       flexDirection: "column",
       //     }}>
       //     <GridCell justifyCenter={true}>
-      //       <p style={{ padding: "2%" }}>Please Choose a Shirt</p>
+      //       <p style={{ padding: "2%", textAlignLast: "center" }}>What shirt would you wear on a night out?</p>
       //       <form
       //         style={{
       //           display: "flex",
@@ -89,7 +89,7 @@ class Preferences extends PureComponent {
       //         </div>
       //       </form>
 
-      //       <p style={{ padding: "2%" }}>
+      //       <p style={{ padding: "2%", textAlignLast: "center" }}>
       //         Which Bottoms would you wear on a night out?
       //       </p>
       //       <form
@@ -146,7 +146,7 @@ class Preferences extends PureComponent {
       //           <input name='bottoms' id='beach-bottom' type='radio'></input>
       //         </div>
       //       </form>
-      //       <p style={{ padding: "2%" }}>
+      //       <p style={{ padding: "2%", textAlignLast: "center" }}>
       //         Which shoes would you wear on a daily basis
       //       </p>
       //       <form
@@ -201,7 +201,7 @@ class Preferences extends PureComponent {
       //           <input name='shoes' id='beach-shoes' type='radio'></input>
       //         </div>
       //       </form>
-      //       <p style={{ padding: "2%" }}>
+      //       <p style={{ padding: "2%", textAlignLast: "center" }}>
       //         Which hat would you wear under the hot sun?
       //       </p>
       //     </GridCell>
@@ -232,7 +232,7 @@ class Preferences extends PureComponent {
             flexDirection: "column",
           }}>
           <GridCell justifyCenter={true}>
-            <p style={{ padding: "2%" }}>Which Shirt would you wear to the club?</p>
+            <p style={{ padding: "2%", textAlignLast: "center" }}>Which Shirt would you wear to the club?</p>
             <form
               style={{
                 display: "flex",
@@ -288,7 +288,7 @@ class Preferences extends PureComponent {
               </div>
             </form>
 
-            <p style={{ padding: "2%" }}>
+            <p style={{ padding: "2%", textAlignLast: "center" }}>
               Which Bottoms would you wear on a night out?
             </p>
             <form
@@ -345,7 +345,7 @@ class Preferences extends PureComponent {
                 <input name='bottoms' id='beach-bottom' type='radio'></input>
               </div>
             </form>
-            <p style={{ padding: "2%" }}>
+            <p style={{ padding: "2%", textAlignLast: "center" }}>
               Which shoes would you wear on a daily basis?
             </p>
             <form
@@ -400,7 +400,7 @@ class Preferences extends PureComponent {
                 <input name='shoes' id='beach-shoes' type='radio'></input>
               </div>
             </form>
-            <p style={{ padding: "2%" }}>
+            <p style={{ padding: "2%", textAlignLast: "center"}}>
               Which accessory would you wear out on the town?
             </p>
             <form
