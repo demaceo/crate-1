@@ -20,7 +20,206 @@ class Preferences extends PureComponent {
 
   render() {
     return (
-      <GridCell>
+      // <GridCell class="mens-survey">
+      //   <Helmet>
+      //     <title> Choose Your Style Survey - Crate</title>
+      //   </Helmet>
+      //   <Grid
+      //     gutter={true}
+      //     alignCenter={true}
+      //     style={{
+      //       display: "flex",
+      //       flex: 1,
+      //       flexDirection: "column",
+      //     }}>
+      //     <GridCell justifyCenter={true}>
+      //       <p style={{ padding: "2%" }}>Please Choose a Shirt</p>
+      //       <form
+      //         style={{
+      //           display: "flex",
+      //           flex: 1,
+      //           flexDirection: "row",
+      //         }}>
+      //         <div
+      //           style={{
+      //             display: "flex",
+      //             flex: 1,
+      //             flexDirection: "column",
+      //             alignItems: "center",
+      //           }}>
+      //           <ImageTile
+      //             width={300}
+      //             height={300}
+      //             image={` ${APP_URL}/images/survey-pics/mens-survey/goth-top.jpg`}
+      //             margin={10}
+      //           />
+      //           <input name='tops' id='goth-top' type='radio'></input>
+      //         </div>
+      //         <div
+      //           style={{
+      //             display: "flex",
+      //             flex: 1,
+      //             flexDirection: "column",
+      //             alignItems: "center",
+                  
+      //           }}>
+      //           <ImageTile
+      //             width={300}
+      //             height={300}
+      //             image={` ${APP_URL}/images/survey-pics/mens-survey/sport-top.jpg`}
+      //             margin={10}
+      //           />
+      //           <input name='tops' id='goth-top' type='radio'></input>
+      //         </div>
+      //         <div
+      //           style={{
+      //             display: "flex",
+      //             flex: 1,
+      //             flexDirection: "column",
+      //             alignItems: "center",
+                 
+      //           }}>
+      //           <ImageTile
+      //             width={300}
+      //             height={300}
+      //             image={` ${APP_URL}/images/survey-pics/mens-survey/beach-top.jpg`}
+      //             margin={10}
+      //           />
+      //           <input name='tops' id='beach-top' type='radio'></input>
+      //         </div>
+      //       </form>
+
+      //       <p style={{ padding: "2%" }}>
+      //         Which Bottoms would you wear on a night out?
+      //       </p>
+      //       <form
+      //         style={{
+      //           display: "flex",
+      //           flex: 1,
+      //           flexDirection: "row",
+  
+      //         }}>
+      //         <div
+      //           style={{
+      //             display: "flex",
+      //             flex: 1,
+      //             flexDirection: "column",
+      //             alignItems: "center",
+                  
+      //           }}>
+      //           <ImageTile
+      //             width={300}
+      //             height={300}
+      //             image={` ${APP_URL}/images/survey-pics/mens-survey/goth-bottoms.jpg`}
+      //             margin={10}
+      //           />
+      //           <input name='bottoms' id='goth-bottom' type='radio'></input>
+      //         </div>
+      //         <div
+      //           style={{
+      //             display: "flex",
+      //             flex: 1,
+      //             flexDirection: "column",
+      //             alignItems: "center",
+      //           }}>
+      //           <ImageTile
+      //             width={300}
+      //             height={300}
+      //             image={` ${APP_URL}/images/survey-pics/mens-survey/sport-bottoms.jpg`}
+      //             margin={10}
+      //           />
+      //           <input name='bottoms' id='sport-bottom' type='radio'></input>
+      //         </div>
+      //         <div
+      //           style={{
+      //             display: "flex",
+      //             flex: 1,
+      //             flexDirection: "column",
+      //             alignItems: "center",
+      //           }}>
+      //           <ImageTile
+      //             width={300}
+      //             height={300}
+      //             image={` ${APP_URL}/images/survey-pics/mens-survey/beach-bottoms.jpg`}
+      //             margin={10}
+      //           />
+      //           <input name='bottoms' id='beach-bottom' type='radio'></input>
+      //         </div>
+      //       </form>
+      //       <p style={{ padding: "2%" }}>
+      //         Which shoes would you wear on a daily basis
+      //       </p>
+      //       <form
+      //         style={{
+      //           display: "flex",
+      //           flex: 1,
+      //           flexDirection: "row",
+      //         }}>
+      //         <div
+      //           style={{
+      //             display: "flex",
+      //             flex: 1,
+      //             flexDirection: "column",
+      //             alignItems: "center",                  
+      //           }}>
+      //           <ImageTile
+      //             width={300}
+      //             height={300}
+      //             image={` ${APP_URL}/images/survey-pics/mens-survey/goth-shoes.jpg`}
+      //             margin={10}
+      //           />
+      //           <input name='shoes' id='goth-shoes' type='radio'></input>
+      //         </div>
+      //         <div
+      //           style={{
+      //             display: "flex",
+      //             flex: 1,
+      //             flexDirection: "column",
+      //             alignItems: "center",               
+      //           }}>
+      //           <ImageTile
+      //             width={300}
+      //             height={300}
+      //             image={` ${APP_URL}/images/survey-pics/mens-survey/sport-shoes.jpg`}
+      //             margin={10}
+      //           />
+      //           <input name='shoes' id='sport-shoes' type='radio'></input>
+      //         </div>
+      //         <div
+      //           style={{
+      //             display: "flex",
+      //             flex: 1,
+      //             flexDirection: "column",
+      //             alignItems: "center",                
+      //           }}>
+      //           <ImageTile
+      //             width={300}
+      //             height={300}
+      //             image={` ${APP_URL}/images/survey-pics/mens-survey/beach-shoes.jpg`}
+      //             margin={10}
+      //           />
+      //           <input name='shoes' id='beach-shoes' type='radio'></input>
+      //         </div>
+      //       </form>
+      //       <p style={{ padding: "2%" }}>
+      //         Which hat would you wear under the hot sun?
+      //       </p>
+      //     </GridCell>
+      //     <GridCell>
+      //       <Grid>
+      //         <GridCell justifyCenter={true}>
+      //           <ImageTile width={170} height={250} />
+      //         </GridCell>
+      //       </Grid>
+      //       <Grid>
+      //         <GridCell justifyCenter={true}>
+      //           <ImageTile width={170} height={250} />
+      //         </GridCell>
+      //       </Grid>
+      //     </GridCell>
+      //   </Grid>
+      // </GridCell>
+      <GridCell class="womens-survey">
         <Helmet>
           <title> Choose Your Style Survey - Crate</title>
         </Helmet>
@@ -31,16 +230,14 @@ class Preferences extends PureComponent {
             display: "flex",
             flex: 1,
             flexDirection: "column",
-            marginTop: "15vh",
           }}>
           <GridCell justifyCenter={true}>
-            <p style={{ padding: "2%" }}>Please Choose a Shirt</p>
+            <p style={{ padding: "2%" }}>Which Shirt would you wear to the club?</p>
             <form
               style={{
                 display: "flex",
                 flex: 1,
                 flexDirection: "row",
-                marginTop: "15vh",
               }}>
               <div
                 style={{
@@ -48,12 +245,11 @@ class Preferences extends PureComponent {
                   flex: 1,
                   flexDirection: "column",
                   alignItems: "center",
-                  marginTop: "5vh",
                 }}>
                 <ImageTile
                   width={300}
                   height={300}
-                  image={` ${APP_URL}/images/survey-pics/mens-survey/goth-top.jpg`}
+                  image={` ${APP_URL}/images/survey-pics/womens-survey/goth-top.jpg`}
                   margin={10}
                 />
                 <input name='tops' id='goth-top' type='radio'></input>
@@ -64,12 +260,12 @@ class Preferences extends PureComponent {
                   flex: 1,
                   flexDirection: "column",
                   alignItems: "center",
-                  marginTop: "5vh",
+                  
                 }}>
                 <ImageTile
                   width={300}
                   height={300}
-                  image={` ${APP_URL}/images/survey-pics/mens-survey/sport-top.jpg`}
+                  image={` ${APP_URL}/images/survey-pics/womens-survey/sport-top.jpg`}
                   margin={10}
                 />
                 <input name='tops' id='goth-top' type='radio'></input>
@@ -80,12 +276,12 @@ class Preferences extends PureComponent {
                   flex: 1,
                   flexDirection: "column",
                   alignItems: "center",
-                  marginTop: "5vh",
+                 
                 }}>
                 <ImageTile
                   width={300}
                   height={300}
-                  image={` ${APP_URL}/images/survey-pics/mens-survey/beach-top.jpg`}
+                  image={` ${APP_URL}/images/survey-pics/womens-survey/beach-top.jpg`}
                   margin={10}
                 />
                 <input name='tops' id='beach-top' type='radio'></input>
@@ -100,7 +296,7 @@ class Preferences extends PureComponent {
                 display: "flex",
                 flex: 1,
                 flexDirection: "row",
-                marginTop: "15vh",
+  
               }}>
               <div
                 style={{
@@ -108,12 +304,12 @@ class Preferences extends PureComponent {
                   flex: 1,
                   flexDirection: "column",
                   alignItems: "center",
-                  marginTop: "5vh",
+                  
                 }}>
                 <ImageTile
                   width={300}
                   height={300}
-                  image={` ${APP_URL}/images/survey-pics/mens-survey/goth-bottoms.jpg`}
+                  image={` ${APP_URL}/images/survey-pics/womens-survey/goth-bottoms.jpg`}
                   margin={10}
                 />
                 <input name='bottoms' id='goth-bottom' type='radio'></input>
@@ -124,12 +320,11 @@ class Preferences extends PureComponent {
                   flex: 1,
                   flexDirection: "column",
                   alignItems: "center",
-                  marginTop: "5vh",
                 }}>
                 <ImageTile
                   width={300}
                   height={300}
-                  image={` ${APP_URL}/images/survey-pics/mens-survey/sport-bottoms.jpg`}
+                  image={` ${APP_URL}/images/survey-pics/womens-survey/sport-bottoms.jpg`}
                   margin={10}
                 />
                 <input name='bottoms' id='sport-bottom' type='radio'></input>
@@ -140,39 +335,36 @@ class Preferences extends PureComponent {
                   flex: 1,
                   flexDirection: "column",
                   alignItems: "center",
-                  marginTop: "5vh",
                 }}>
                 <ImageTile
                   width={300}
                   height={300}
-                  image={` ${APP_URL}/images/survey-pics/mens-survey/beach-bottoms.jpg`}
+                  image={` ${APP_URL}/images/survey-pics/womens-survey/beach-bottoms.jpg`}
                   margin={10}
                 />
                 <input name='bottoms' id='beach-bottom' type='radio'></input>
               </div>
             </form>
             <p style={{ padding: "2%" }}>
-              Which shoes would you wear on a daily basis
+              Which shoes would you wear on a daily basis?
             </p>
             <form
               style={{
                 display: "flex",
                 flex: 1,
                 flexDirection: "row",
-                marginTop: "15vh",
               }}>
               <div
                 style={{
                   display: "flex",
                   flex: 1,
                   flexDirection: "column",
-                  alignItems: "center",
-                  marginTop: "5vh",
+                  alignItems: "center",                  
                 }}>
                 <ImageTile
                   width={300}
                   height={300}
-                  image={` ${APP_URL}/images/survey-pics/mens-survey/goth-shoes.jpg`}
+                  image={` ${APP_URL}/images/survey-pics/womens-survey/goth-shoes.jpg`}
                   margin={10}
                 />
                 <input name='shoes' id='goth-shoes' type='radio'></input>
@@ -182,13 +374,12 @@ class Preferences extends PureComponent {
                   display: "flex",
                   flex: 1,
                   flexDirection: "column",
-                  alignItems: "center",
-                  marginTop: "5vh",
+                  alignItems: "center",               
                 }}>
                 <ImageTile
                   width={300}
                   height={300}
-                  image={` ${APP_URL}/images/survey-pics/mens-survey/sport-shoes.jpg`}
+                  image={` ${APP_URL}/images/survey-pics/womens-survey/sport-shoes.jpg`}
                   margin={10}
                 />
                 <input name='shoes' id='sport-shoes' type='radio'></input>
@@ -198,21 +389,72 @@ class Preferences extends PureComponent {
                   display: "flex",
                   flex: 1,
                   flexDirection: "column",
-                  alignItems: "center",
-                  marginTop: "5vh",
+                  alignItems: "center",                
                 }}>
                 <ImageTile
                   width={300}
                   height={300}
-                  image={` ${APP_URL}/images/survey-pics/mens-survey/beach-shoes.jpg`}
+                  image={` ${APP_URL}/images/survey-pics/womens-survey/beach-shoes.jpg`}
                   margin={10}
                 />
                 <input name='shoes' id='beach-shoes' type='radio'></input>
               </div>
             </form>
             <p style={{ padding: "2%" }}>
-              Which hat would you wear under the hot sun?
+              Which accessory would you wear out on the town?
             </p>
+            <form
+              style={{
+                display: "flex",
+                flex: 1,
+                flexDirection: "row",
+              }}>
+              <div
+                style={{
+                  display: "flex",
+                  flex: 1,
+                  flexDirection: "column",
+                  alignItems: "center",                  
+                }}>
+                <ImageTile
+                  width={300}
+                  height={300}
+                  image={` ${APP_URL}/images/survey-pics/womens-survey/goth-necklace.jpg`}
+                  margin={10}
+                />
+                <input name='shoes' id='goth-shoes' type='radio'></input>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flex: 1,
+                  flexDirection: "column",
+                  alignItems: "center",               
+                }}>
+                <ImageTile
+                  width={300}
+                  height={300}
+                  image={` ${APP_URL}/images/survey-pics/womens-survey/sport-necklace.jpg`}
+                  margin={10}
+                />
+                <input name='shoes' id='sport-shoes' type='radio'></input>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flex: 1,
+                  flexDirection: "column",
+                  alignItems: "center",                
+                }}>
+                <ImageTile
+                  width={300}
+                  height={300}
+                  image={` ${APP_URL}/images/survey-pics/womens-survey/beach-necklace.jpg`}
+                  margin={10}
+                />
+                <input name='shoes' id='beach-shoes' type='radio'></input>
+              </div>
+            </form>
           </GridCell>
           <GridCell>
             <Grid>
