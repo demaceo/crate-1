@@ -88,10 +88,14 @@ export async function getGenders() {
 export async function createStyle(parentValue, { id, stylePreference }) {
   // const user = await models.User.findOne({ where: { id } })
 
-  return await models.User.update(
+  await models.User.update(
     {
       stylePreference
     },
     { where: { id } }
-  )
+    )
+  return {
+    id: id,
+    stylePreference: stylePreference
+  }
 }
