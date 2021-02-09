@@ -15,7 +15,13 @@ module.exports = function (sequelize, DataTypes) {
     role: {
       type: DataTypes.TEXT,
     },
-  });
+    survey: {
+      type: DataTypes.BOOLEAN
+    },
+    stylePreference: {
+      type: DataTypes.TEXT
+    }
+  })
 
   User.associate = function (models) {
     User.hasMany(models.Subscription);
