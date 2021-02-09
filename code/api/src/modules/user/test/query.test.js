@@ -1,8 +1,8 @@
 import request from 'supertest';
 import express from 'express';
 import graphqlHTTP from 'express-graphql';
-import schema from '../../setup/schema/index';
-import connection from '../../setup/database'
+import schema from '../../../setup/schema/index';
+import connection from '../../../setup/database'
 
 describe('Tests the users query', () => {
   let server;
@@ -29,7 +29,7 @@ describe('Tests the users query', () => {
   it('returns a user by id', async (done) => {
     const response = await request(server)
     .post('/graphql')
-        .send({query: '{user(id:2) {id name email role}}'})
+        .send({query: '{user(id:2) {id name email role survey stylePreference}}'})
         .expect(200)
         expect(response.body.data.user.id).toBe(2);
         expect(response.body).toMatchObject(
@@ -39,7 +39,9 @@ describe('Tests the users query', () => {
                 id: 2,
                 name: 'The User',
                 email: 'user@crate.com',
-                role: 'USER'
+                role: 'USER',
+                survey: null,
+                stylePreference: null
               }
             }
           }
