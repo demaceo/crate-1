@@ -101,15 +101,17 @@ export async function createStyle(parentValue, { id, styleArray, survey }) {
 }
 
 // Create Style Preference 
-export async function createStyle(parentValue, { id, styleArray }) {
+export async function createStyle(parentValue, { id, styleArray, survey }) {
   await models.User.update(
     {
-      stylePreference: styleArray
+      stylePreference: styleArray,
+      survey: survey
     },
     { where: { id } }
     )
   return {
     id: id,
-    stylePreference: stylePreference
+    stylePreference: stylePreference,
+    survey: survey
   }
 }

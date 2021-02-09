@@ -74,6 +74,11 @@ export const createStylePreference = {
     stylePreference: {
       name: 'styleArray',
       type: GraphQLString
+    },
+
+    survey: {
+      name: 'survey',
+      type: GraphQLBoolean
     }
   },
   resolve: createStyle
