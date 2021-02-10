@@ -21,8 +21,6 @@ class Preferences extends PureComponent {
 
   let selectedStyles = [];
 
-
-
   let allRadioBtns = document.getElementsByClassName('radio-btn');
     for (let i = 0, length = allRadioBtns.length; i < length; i++) {
       if (allRadioBtns[i].checked) {
@@ -67,7 +65,7 @@ class Preferences extends PureComponent {
       //             image={` ${APP_URL}/images/survey-pics/mens-survey/goth-top.jpg`}
       //             margin={10}
       //           />
-      //           <input name='tops' id='goth-top' type='radio'></input>
+      //           <input name='tops' className='radio-btn' type='radio' value='goth'></input>
       //         </div>
       //         <div
       //           style={{
@@ -83,7 +81,7 @@ class Preferences extends PureComponent {
       //             image={` ${APP_URL}/images/survey-pics/mens-survey/sport-top.jpg`}
       //             margin={10}
       //           />
-      //           <input name='tops' id='goth-top' type='radio'></input>
+      //            <input name='tops' className='radio-btn' type='radio' value='sport'></input>
       //         </div>
       //         <div
       //           style={{
@@ -99,7 +97,7 @@ class Preferences extends PureComponent {
       //             image={` ${APP_URL}/images/survey-pics/mens-survey/beach-top.jpg`}
       //             margin={10}
       //           />
-      //           <input name='tops' id='beach-top' type='radio'></input>
+      //           <input name='tops' className='radio-btn' type='radio' value='beach'></input>
       //         </div>
       //       </form>
 
@@ -127,7 +125,7 @@ class Preferences extends PureComponent {
       //             image={` ${APP_URL}/images/survey-pics/mens-survey/goth-bottoms.jpg`}
       //             margin={10}
       //           />
-      //           <input name='bottoms' id='goth-bottom' type='radio'></input>
+      //           <input name='bottoms' className='radio-btn' type='radio' value='goth'></input>
       //         </div>
       //         <div
       //           style={{
@@ -142,7 +140,7 @@ class Preferences extends PureComponent {
       //             image={` ${APP_URL}/images/survey-pics/mens-survey/sport-bottoms.jpg`}
       //             margin={10}
       //           />
-      //           <input name='bottoms' id='sport-bottom' type='radio'></input>
+      //           <input name='bottoms' className='radio-btn' type='radio' value='sport'></input>
       //         </div>
       //         <div
       //           style={{
@@ -157,7 +155,7 @@ class Preferences extends PureComponent {
       //             image={` ${APP_URL}/images/survey-pics/mens-survey/beach-bottoms.jpg`}
       //             margin={10}
       //           />
-      //           <input name='bottoms' id='beach-bottom' type='radio'></input>
+      //           <input name='bottoms' className='radio-btn' type='radio' value='beach'></input>
       //         </div>
       //       </form>
       //       <p style={{ padding: "2%", textAlignLast: "center" }}>
@@ -182,7 +180,7 @@ class Preferences extends PureComponent {
       //             image={` ${APP_URL}/images/survey-pics/mens-survey/goth-shoes.jpg`}
       //             margin={10}
       //           />
-      //           <input name='shoes' id='goth-shoes' type='radio'></input>
+      //          <input name='shoes' className='radio-btn' type='radio' value='goth'></input>
       //         </div>
       //         <div
       //           style={{
@@ -197,7 +195,7 @@ class Preferences extends PureComponent {
       //             image={` ${APP_URL}/images/survey-pics/mens-survey/sport-shoes.jpg`}
       //             margin={10}
       //           />
-      //           <input name='shoes' id='sport-shoes' type='radio'></input>
+      //            <input name='shoes' className='radio-btn' type='radio' value='sport'></input>
       //         </div>
       //         <div
       //           style={{
@@ -212,7 +210,7 @@ class Preferences extends PureComponent {
       //             image={` ${APP_URL}/images/survey-pics/mens-survey/beach-shoes.jpg`}
       //             margin={10}
       //           />
-      //           <input name='shoes' id='beach-shoes' type='radio'></input>
+      //           <input name='shoes' className='radio-btn' type='radio' value='beach'></input>
       //         </div>
       //       </form>
       //       <p style={{ padding: "2%", textAlignLast: "center" }}>
