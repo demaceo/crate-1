@@ -43,11 +43,7 @@ class Preferences extends PureComponent {
     console.log(selectedStyles)
   }
 
-
-  const initialState = {
-    crates: [{id: ''}]
-  }
-
+  
   //add id to the subscribe buttons 
   //grab the id on click
   //if the id === mens 
