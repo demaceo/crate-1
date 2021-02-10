@@ -91,6 +91,7 @@ class Item extends PureComponent {
             <Button
               theme='primary'
               onClick={this.onClickSubscribe.bind(this, id)}
+              id={name}
               type='button'
               disabled={isLoading}>
               <Icon size={1.2} style={{ color: white }}>

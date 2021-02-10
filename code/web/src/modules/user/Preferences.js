@@ -16,12 +16,25 @@ class Preferences extends PureComponent {
     // return store.dispatch(getListByUser());
   }
 
+  // const reducer = (state, action) => {
+  //   if () {
+  //     return {
+  //       loggedIn: true
+  //     }
+  //   }
+
+  //   return state
+  // }
+
+  // const store = createStore(reducer);
+
+
   handleClick = (e) => {
-  e.preventDefault()
+    e.preventDefault()
 
-  let selectedStyles = [];
+    let selectedStyles = [];
 
-  let allRadioBtns = document.getElementsByClassName('radio-btn');
+    let allRadioBtns = document.getElementsByClassName('radio-btn');
     for (let i = 0, length = allRadioBtns.length; i < length; i++) {
       if (allRadioBtns[i].checked) {
         selectedStyles.push(allRadioBtns[i].value)
@@ -30,8 +43,44 @@ class Preferences extends PureComponent {
     console.log(selectedStyles)
   }
 
+
+  const initialState = {
+    crates: [{id: ''}]
+  }
+
+  //add id to the subscribe buttons 
+  //grab the id on click
+  //if the id === mens 
+  //render the mens prefs
+  //else render womens prefs 
+
+
+  // determineStylePreference = (styleArray) => {
+  //   let styleMap = {};
+
+  //   if (styleArray.length == 0) {
+  //     window.alert('error error')
+  //     return null
+  //   } else {
+
+  //   }
+
+  //   for(var i = 0; i < styleArray.length; i++) {
+  //     if(!styleMap[styleArray[i]]) {
+  //       styleMap[styleArray[i]] = 1;
+  //     } else {
+  //       styleMap[styleArray[i]] += 1;
+  //     }
+  //   }
+
+  // }
+
+  //add one more category to the survey 
+
   render() {
+    //if mens id
     return (
+
       // <GridCell class="mens-survey">
       //   <Helmet>
       //     <title> Choose Your Style Survey - Crate</title>
@@ -73,7 +122,7 @@ class Preferences extends PureComponent {
       //             flex: 1,
       //             flexDirection: "column",
       //             alignItems: "center",
-                  
+
       //           }}>
       //           <ImageTile
       //             width={300}
@@ -89,7 +138,7 @@ class Preferences extends PureComponent {
       //             flex: 1,
       //             flexDirection: "column",
       //             alignItems: "center",
-                 
+
       //           }}>
       //           <ImageTile
       //             width={300}
@@ -109,7 +158,7 @@ class Preferences extends PureComponent {
       //           display: "flex",
       //           flex: 1,
       //           flexDirection: "row",
-  
+
       //         }}>
       //         <div
       //           style={{
@@ -117,7 +166,7 @@ class Preferences extends PureComponent {
       //             flex: 1,
       //             flexDirection: "column",
       //             alignItems: "center",
-                  
+
       //           }}>
       //           <ImageTile
       //             width={300}
@@ -231,7 +280,9 @@ class Preferences extends PureComponent {
       //     </GridCell>
       //   </Grid>
       // </GridCell>
-      <GridCell class="womens-survey" style={{display:'flex', alignItems:'center', flexFlow:'column'}}>
+
+      //else return 
+      <GridCell class="womens-survey" style={{ display: 'flex', alignItems: 'center', flexFlow: 'column' }}>
         <Helmet>
           <title> Choose Your Style Survey - Crate</title>
         </Helmet>
@@ -272,7 +323,7 @@ class Preferences extends PureComponent {
                   flex: 1,
                   flexDirection: "column",
                   alignItems: "center",
-                  
+
                 }}>
                 <ImageTile
                   width={300}
@@ -288,7 +339,7 @@ class Preferences extends PureComponent {
                   flex: 1,
                   flexDirection: "column",
                   alignItems: "center",
-                 
+
                 }}>
                 <ImageTile
                   width={300}
@@ -308,7 +359,7 @@ class Preferences extends PureComponent {
                 display: "flex",
                 flex: 1,
                 flexDirection: "row",
-  
+
               }}>
               <div
                 style={{
@@ -316,7 +367,7 @@ class Preferences extends PureComponent {
                   flex: 1,
                   flexDirection: "column",
                   alignItems: "center",
-                  
+
                 }}>
                 <ImageTile
                   width={300}
@@ -371,7 +422,7 @@ class Preferences extends PureComponent {
                   display: "flex",
                   flex: 1,
                   flexDirection: "column",
-                  alignItems: "center",                  
+                  alignItems: "center",
                 }}>
                 <ImageTile
                   width={300}
@@ -386,7 +437,7 @@ class Preferences extends PureComponent {
                   display: "flex",
                   flex: 1,
                   flexDirection: "column",
-                  alignItems: "center",               
+                  alignItems: "center",
                 }}>
                 <ImageTile
                   width={300}
@@ -401,7 +452,7 @@ class Preferences extends PureComponent {
                   display: "flex",
                   flex: 1,
                   flexDirection: "column",
-                  alignItems: "center",                
+                  alignItems: "center",
                 }}>
                 <ImageTile
                   width={300}
@@ -412,7 +463,7 @@ class Preferences extends PureComponent {
                 <input name='shoes' className='radio-btn' type='radio' value='beach'></input>
               </div>
             </form>
-            <p style={{ padding: "2%", textAlignLast: "center"}}>
+            <p style={{ padding: "2%", textAlignLast: "center" }}>
               Which accessory would you wear out on the town?
             </p>
             <form
@@ -426,7 +477,7 @@ class Preferences extends PureComponent {
                   display: "flex",
                   flex: 1,
                   flexDirection: "column",
-                  alignItems: "center",                  
+                  alignItems: "center",
                 }}>
                 <ImageTile
                   width={300}
@@ -441,7 +492,7 @@ class Preferences extends PureComponent {
                   display: "flex",
                   flex: 1,
                   flexDirection: "column",
-                  alignItems: "center",               
+                  alignItems: "center",
                 }}>
                 <ImageTile
                   width={300}
@@ -456,7 +507,7 @@ class Preferences extends PureComponent {
                   display: "flex",
                   flex: 1,
                   flexDirection: "column",
-                  alignItems: "center",                
+                  alignItems: "center",
                 }}>
                 <ImageTile
                   width={300}
@@ -469,10 +520,10 @@ class Preferences extends PureComponent {
             </form>
           </GridCell>
         </Grid>
-          <button 
-            style={{height:'55px', width:'100px', margin:'10px'}}
-            onClick={() => this.handleClick(event)}
-            >Submit</button>
+        <button
+          style={{ height: '55px', width: '100px', margin: '10px' }}
+          onClick={() => this.handleClick(event)}
+        >Submit</button>
       </GridCell>
     );
   }
