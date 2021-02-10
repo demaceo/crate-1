@@ -3,6 +3,7 @@ import express from 'express';
 import graphqlHTTP from 'express-graphql';
 import schema from '../../../setup/schema/index';
 import connection from '../../../setup/database'
+import { TokenKind } from 'graphql';
 
 describe('Tests the users query', () => {
   let server;
@@ -69,6 +70,15 @@ describe('Tests the users query', () => {
             }
           }
         )
+    done();
+  });
+
+  it('user login', async (done) => {
+    const response = await request(server)
+    .post('/graphql')
+        .send({query: '{userLogin(email: "admin@crate.com", password: "123456") {token}}'})
+        .expect(200)
+        expect(response.body.data.userLogin).toHaveProperty('token')
     done();
   });
 
