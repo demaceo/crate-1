@@ -3,7 +3,6 @@ import express from 'express';
 import graphqlHTTP from 'express-graphql';
 import schema from '../../../setup/schema/index';
 import connection from '../../../setup/database'
-import { TokenKind } from 'graphql';
 
 describe('Tests the users query', () => {
   let server;
