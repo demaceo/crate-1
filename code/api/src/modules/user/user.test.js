@@ -21,7 +21,7 @@ describe('Tests the users query', () => {
         .post('/graphql')
         .send({query: '{users {email}}'})
         .expect(200)
-        expect(response.body.data.users.length).toBe(3);
+        expect(response.body.data.users.length).toBe(2);
 
     done();
   });
