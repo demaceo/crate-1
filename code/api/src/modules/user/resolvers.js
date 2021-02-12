@@ -79,17 +79,15 @@ export async function getGenders() {
 }
 
 // Create Style Preference 
-export async function createStyle(parentValue, { id, styleArray, survey }) {
+export async function createStyle(parentValue, { id, stylePreference, survey }) {
+  var userStyle = stylePreference.split(', ')
+  var user = await models.User.findOne({ where: { id } })
   await models.User.update(
     {
-      stylePreference: styleArray,
+      stylePreference: userStyle[0],
       survey: survey
     },
     { where: { id } }
     )
-  return {
-    id: id,
-    stylePreference: stylePreference,
-    survey: survey
-  }
+  return user
 }
