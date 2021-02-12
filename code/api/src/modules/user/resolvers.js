@@ -101,8 +101,8 @@ export async function createStyle(parentValue, { id, styleArray, survey }) {
 }
 
 // Create Style Preference 
-export async function createStyle(parentValue, { id, stylePreference, survey }) {
-  var userStyle = stylePreference.split(', ')
+export async function createStyle(parentValue, { id, style, survey }) {
+  var userStyle = style.split(', ')
   var user = await models.User.findOne({ where: { id } })
   await models.User.update(
     {
