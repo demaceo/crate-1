@@ -50,7 +50,7 @@ export const createStylePreference = {
     },
 
     stylePreference: {
-      name: 'styleArray',
+      name: 'stylePreference',
       type: GraphQLString
     },
 
