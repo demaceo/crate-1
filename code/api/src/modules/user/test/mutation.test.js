@@ -19,7 +19,7 @@ describe('Test user mutations', () => {
   it('update a users style type', async (done) => {
       const response = await request(server)
         .post('/graphql')
-        .send({query: 'mutation { createStylePreference(id:2, survey: true, styleArray: ["goth", "athletic", "beach", "athletic"]) {id survey stylePreference} }'})
+        .send({query: 'mutation { createStylePreference(id: 2, survey: true, stylePreference: "goth, athletic, beach, athletic") {id survey stylePreference} }'})
         .expect(200)
         expect(response.body).toMatchObject(
           {
