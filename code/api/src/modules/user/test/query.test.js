@@ -29,17 +29,17 @@ describe('Tests the users query', () => {
   it('returns a user by id', async (done) => {
     const response = await request(server)
     .post('/graphql')
-        .send({query: '{user(id:2) {id name email role survey stylePreference}}'})
+        .send({query: '{user(id:1) {id name email role survey stylePreference}}'})
         .expect(200)
-        expect(response.body.data.user.id).toBe(2);
+        expect(response.body.data.user.id).toBe(1);
         expect(response.body).toMatchObject(
           {
             data: {
               user: {
-                id: 2,
-                name: 'The User',
-                email: 'user@crate.com',
-                role: 'USER',
+                id: 1,
+                name: 'The Admin',
+                email: 'admin@crate.com',
+                role: 'ADMIN',
                 survey: null,
                 stylePreference: null
               }
