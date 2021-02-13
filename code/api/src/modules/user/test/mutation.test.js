@@ -38,6 +38,11 @@ describe('Test user mutations', () => {
 
   afterAll(done => {
     connection.close();
+    models.User.destroy({
+      where: {
+        id: 2
+      }
+    });
     done();
   });
 });

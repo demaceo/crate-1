@@ -81,7 +81,6 @@ export async function getGenders() {
 // Create Style Preference
 export async function createStyle(parentValue, { id, style, survey }) {
   var userStyle = style.split(', ');
-  console.log(userStyle)
   var userStyleCounts = {};
   var maxKey = '';
   for(var i = 0; i < userStyle.length; i++)
