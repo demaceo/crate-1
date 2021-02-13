@@ -28,3 +28,6 @@ export const subscriptionRemove = {
   },
   resolve: remove
 }
+
+// Can delete style preference(s) from user dashboard - will give promt to 
+//delete or keep subscription

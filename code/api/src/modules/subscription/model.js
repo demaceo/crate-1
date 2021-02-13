@@ -1,23 +1,22 @@
-'use strict'
+"use strict";
 
 // Subscription
-module.exports = function(sequelize, DataTypes) {
-  let Subscription = sequelize.define('subscriptions', {
+module.exports = function (sequelize, DataTypes) {
+  let Subscription = sequelize.define("subscriptions", {
     userId: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
     },
     crateId: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
     },
-    styleType: {
-      type: DataTypes.STRING
-    }
-  })
+  });
 
-  Subscription.associate = function(models) {
-    Subscription.belongsTo(models.User)
-    Subscription.belongsTo(models.Crate)
-  }
+  Subscription.associate = function (models) {
+    Subscription.belongsTo(models.User);
+    Subscription.belongsTo(models.Crate);
+  };
 
-  return Subscription
-}
+  return Subscription;
+};
+
+//add a style category to the subscription based on what a user has selected
