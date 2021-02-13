@@ -32,7 +32,6 @@ describe('Test user mutations', () => {
               }
             }
           )
-
     done();
   });
 

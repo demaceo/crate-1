@@ -3,7 +3,7 @@ import { GraphQLString, GraphQLInt, GraphQLBoolean } from 'graphql'
 
 // App Imports
 import { UserType } from './types'
-import { create, remove } from './resolvers'
+import { create, remove, createStyle } from './resolvers'
 
 // Create
 export const userSignup = {
