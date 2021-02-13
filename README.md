@@ -3,7 +3,7 @@
 # Crate 👕👖📦
 
 #### Get monthly subscription of trendy clothes and accessories.
-- This application was built using the framework from a [base application](https://github.com/atulmy/crate) created by [Atul Yadav](https://github.com/atulmy) and other contributors.
+- This application was built for a [Turing School Project](https://mod4.turing.io/projects/crate/crate.html) using the framework from a [base application](https://github.com/atulmy/crate) created by [Atul Yadav](https://github.com/atulmy) and other contributors.
 - **API** built with Node, GraphQL, Express, Sequelize (MySQL) and JWT Auth
 - **WebApp** built with React and Redux along with Server Side Rendering (SSR) / SEO friendly
 - **Mobile** (Android and iOS) Native App build with React Native
@@ -141,6 +141,13 @@ Click on image to view fullscreen and zoom
 ## Database Schema
 
 ![crate_schema](https://user-images.githubusercontent.com/7945439/107857326-1dd25d80-6deb-11eb-814f-785fb4c24c24.png)
+
+## Planning
+
+We used a [miro board](https://miro.com/app/board/o9J_lWYkxj8=/) to create wireframes and plan our requirements for the expected input and output for both the front end and back end API calls.
+
+![Screen Shot 2021-02-13 at 11 46 41 AM](https://user-images.githubusercontent.com/7945439/107858418-39406700-6df1-11eb-9cfb-798c5a56e92b.png)
+
 
 ## Contributors
 Dani Coleman - [Github](https://github.com/dcoleman21)
