@@ -77,3 +77,30 @@ export async function remove(parentValue, { id }) {
 export async function getGenders() {
   return Object.values(params.user.gender)
 }
+
+// Create Style Preference
+export async function createStyle(parentValue, { id, style, survey }) {
+  var userStyle = style.split(', ');
+  var userStyleCounts = {};
+  var maxKey = '';
+  for(var i = 0; i < userStyle.length; i++)
+  {
+    var key = userStyle[i];
+    if(!userStyleCounts[key]){
+      userStyleCounts[key] = 0;
+    }
+    userStyleCounts[key]++;
+    if(maxKey == '' || userStyleCounts[key] > userStyleCounts[maxKey]){
+      maxKey = key;
+    }
+  }
+  var user = await models.User.findOne({ where: { id } })
+  await models.User.update(
+    {
+      stylePreference: maxKey,
+      survey: survey
+    },
+    { where: { id } }
+    )
+  return user
+}
