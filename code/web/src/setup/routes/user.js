@@ -30,7 +30,7 @@ export default {
   },
 
   preferences: {
-    path: "/user/style-preferences",
+    path: "/style-preferences",
     component: Preferences,
     auth: true,
   },

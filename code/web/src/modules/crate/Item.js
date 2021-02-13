@@ -1,5 +1,5 @@
 // Imports
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
@@ -18,19 +18,23 @@ import { messageShow, messageHide } from "../common/api/actions";
 import { create } from "../subscription/api/actions";
 
 // Component
-class Item extends PureComponent {
+class Item extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       isLoading: false,
     };
+    // this.myRef = React.createRef();
   }
 
   onClickSubscribe = (crateId) => {
     this.setState({
       isLoading: true,
     });
+
+    // const someVariable = this.myRef.current.id;
+    // console.log(someVariable);
 
     this.props.messageShow("Subscribing, please wait...");
 
