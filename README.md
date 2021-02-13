@@ -151,10 +151,15 @@ We used a [miro board](https://miro.com/app/board/o9J_lWYkxj8=/) to create wiref
 
 ## Contributors
 Dani Coleman - [Github](https://github.com/dcoleman21)
+
 Demaceo Vincent Howard - [Github](https://github.com/demaceo)
+
 Joe Lopez - [Github](https://github.com/Codo-Baggins)
+
 Peyton Jones - [Github](https://github.com/peytonjo)
+
 Sean Steel - [Github](https://github.com/s-steel)
+
 Sheryl Stillman - [Github](https://github.com/stillsheryl)
 
 ## License
