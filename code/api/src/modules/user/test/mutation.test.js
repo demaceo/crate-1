@@ -36,8 +36,33 @@ describe('Test user mutations', () => {
     done();
   });
 
+  it('update a users style type', async (done) => {
+      const response = await request(server)
+        .post('/graphql')
+        .send({query: 'mutation { createStylePreference(id: 2, survey: true, style: "beach, athletic, beach, athletic") {id survey stylePreference} }'})
+        .expect(200)
+        expect(response.body).toMatchObject(
+          {
+            data: {
+              createStylePreference: {
+                id: 2,
+                stylePreference: "beach and athletic",
+                survey: true
+                }
+              }
+            }
+          )
+
+    done();
+  });
+
   afterAll(done => {
     connection.close();
+    models.User.destroy({
+      where: {
+        id: 2
+      }
+    });
     done();
   });
 });
