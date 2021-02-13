@@ -81,10 +81,18 @@ export async function getGenders() {
 // Create Style Preference 
 export async function createStyle(parentValue, { id, style, survey }) {
   var userStyle = style.split(', ')
+  var counts_hash = userStyle.reduce((style_hash, style_count) => {
+    style_hash[style_count] = (style_hash[style_count] || 0) + 1;
+    return style_hash;
+  }, {});
+  var array_of_counts = Object.values(counts_hash);
+  var max_count = Math.max(...array_of_counts);
+  var selected_style = Object.keys(counts_hash).filter(key => counts_hash[key] === max_count).join(' and ')
+  // console.log(selected_style)
   var user = await models.User.findOne({ where: { id } })
   await models.User.update(
     {
-      stylePreference: userStyle[0],
+      stylePreference: selected_style,
       survey: survey
     },
     { where: { id } }
