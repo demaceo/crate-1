@@ -27,3 +27,5 @@ module.exports = {
     return queryInterface.dropTable('crates');
   }
 }
+
+// crate is the actual box of clothes
