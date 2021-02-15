@@ -49,28 +49,6 @@ export const createStylePreference = {
       type: GraphQLInt
     },
 
-    stylePreference: {
-      name: 'styleArray',
-      type: GraphQLString
-    },
-
-    survey: {
-      name: 'survey',
-      type: GraphQLBoolean
-    }
-  },
-  resolve: remove
-}
-
-// Create Style Preference
-export const createStylePreference = {
-  type: UserType,
-  args: {
-    id: {
-      name: 'id',
-      type: GraphQLInt
-    },
-
     style: {
       name: 'style',
       type: GraphQLString

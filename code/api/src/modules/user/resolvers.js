@@ -85,22 +85,6 @@ export async function getGenders() {
 }
 
 // Create Style Preference 
-export async function createStyle(parentValue, { id, styleArray, survey }) {
-  await models.User.update(
-    {
-      stylePreference: styleArray,
-      survey: survey
-    },
-    { where: { id } }
-    )
-  return {
-    id: id,
-    stylePreference: stylePreference,
-    survey: survey
-  }
-}
-
-// Create Style Preference 
 export async function createStyle(parentValue, { id, style, survey }) {
   var userStyle = style.split(', ')
   var counts_hash = userStyle.reduce((style_hash, style_count) => {
